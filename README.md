@@ -36,7 +36,7 @@ Booking.com 9.3/10 (276), Google 4.5/5 (22). Знімок на 30.09.2026, пл�
 Час заїзду/виїзду, зірковість, Instagram, історичність будівлі, «центр міста», місткість залів. 20 номерів — Planet of Hotels (medium), у schema не передано. Google 4.5 має лише 22 відгуки, тому Booking.com показано першим.
 
 ## Forms
-HotelOS (`kp-panskyidvir`): `stay-request` (проживання), `event-request` (зустрічі й банкети). Документ `hotels/kp-panskyidvir` у Firestore треба створити вручну, інакше правила відхилять заявки.
+HotelOS (`ch-panskyidvir`): `stay-request` (проживання), `event-request` (зустрічі й банкети). Документ `hotels/ch-panskyidvir` у Firestore треба створити вручну, інакше правила відхилять заявки.
 
 ## SEO
 Title і description з маніфесту, canonical, Open Graph, `geo.*`, JSON-LD `Hotel` лише з підтвердженими полями (без numberOfRooms, starRating, aggregateRating), `robots.txt`, `sitemap.xml`, `404.html`.

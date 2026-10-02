@@ -45,10 +45,21 @@ Booking.com 9.3/10 (276), Google 4.5/5 (22). Знімок на 30.09.2026, пл�
 - Address: вул. Андрія Шептицького, 13, Чернівці
 
 ## Sources
-Booking.com listing text (description, rooms, breakfast, house rules; guest reviews ignored), captured 30.09.2026, plus the official site where there is one. Verbatim quotes: `facts.json` in the build scratchpad.
+Booking.com listing text (description, rooms, breakfast, house rules; guest reviews ignored), captured 30.09.2026, plus the official site where there is one. Verbatim quotes: `shared/build/facts.json` у робочому просторі (поза репозиторієм сайту).
+
+## Property-specific sections
+- `#courtyard` Дворик із баром
 
 ## Not published
-Час заїзду/виїзду, зірковість, Instagram, історичність будівлі, «центр міста», місткість залів. 20 номерів — Planet of Hotels (medium), у schema не передано. Google 4.5 має лише 22 відгуки, тому Booking.com показано першим.
+Зірковість, Instagram, історичність будівлі, «центр міста» та відстані з офіційного сайту, місткість залів і банкетів, меню й години ресторану. «До 60 гостей» — місткість проживання з офіційного сайту, не залів. 20 номерів — Planet of Hotels (medium), у schema не передано.
+
+## Content TODO (не показується на сторінці)
+- [ ] TODO: отримати місткість банкетного й конференц-залу (сидячи/фуршет), перелік обладнання — лише тоді показувати цифри
+- [ ] TODO: отримати меню, години й формат ресторану (сніданок?) для окремої секції «Ресторан»
+- [ ] TODO: уточнити, чи проводять весілля, і чи можна замовити кейтеринг чи декор
+- [ ] TODO: зіставити категорії з офіційного сайту («Стандартний, 1 ліжко» тощо) з ліжками й місткістю з Booking
+- [ ] TODO: отримати власні фото закладу (фасад, рецепція, номери, ванні) і погодити їх використання — потім додати галерею
+- [ ] TODO: перевірити ціни й наявність через сам готель; на сторінці цін немає
 
 ## Forms
 HotelOS (`ch-panskyidvir`): `stay-request` (проживання), `event-request` (Запит на подію), `conference-request` (Запит на конференц-зал). Документ `hotels/ch-panskyidvir` у Firestore треба створити вручну, інакше правила відхилять заявки.
